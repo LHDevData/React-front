@@ -52,8 +52,8 @@ const Hero = () => {
 
     // Decrypting titles
     const titleText = useDecryptEffect("LUCAS HENRIQUE", 500);
-    const role1 = useDecryptEffect("DATA ANALYST", 1500);
-    const role2 = useDecryptEffect("MACHINE LEARNING", 2000);
+    const role1 = useDecryptEffect("ANALISTA DADOS", 1500);
+    const role2 = useDecryptEffect("APRENDIZADO MÁQUINA", 2000);
     const role3 = useDecryptEffect("FULL-STACK", 2500);
 
     // Simulate changing system data
@@ -80,7 +80,7 @@ const Hero = () => {
 function init() {
   const system = new System();
   system.connect();
-  // accessing secure data
+  // acessando dados seguros
   return true;
 }
                 `.repeat(5)}
@@ -88,8 +88,8 @@ function init() {
 
             {/* Data Streams / HUD Elements Background */}
             <div className="absolute top-20 left-10 font-mono text-xs text-cyber-green/40 hidden md:block select-none">
-                <p>SYS.STATUS: <span className="text-white">ONLINE</span></p>
-                <p>SEC.LEVEL: <span className="text-red-500 animate-pulse">ALPHA</span></p>
+                <p>STATUS.SIS: <span className="text-white">ONLINE</span></p>
+                <p>NÍVEL.SEG: <span className="text-red-500 animate-pulse">ALPHA</span></p>
                 <p>MEM: {randomData} TB</p>
                 <div className="w-20 h-1 bg-cyber-green/20 mt-2 overflow-hidden">
                     <div className="h-full bg-cyber-green animate-progress w-full origin-left"></div>
@@ -101,8 +101,8 @@ function init() {
 
             <div className="absolute bottom-10 right-10 font-mono text-xs text-cyber-green/40 hidden md:block text-right select-none">
                 <p>COORD: 45.912, -12.004</p>
-                <p>LINK: ESTABLISHED</p>
-                <p>UPTIME: 99.99%</p>
+                <p>CONEXÃO: ESTABELECIDA</p>
+                <p>TEMPO.ATIV: 99.99%</p>
                 <div className="flex gap-1 justify-end mt-2">
                     {[1, 2, 3, 4].map(i => (
                         <div key={i} className={`w-1 h-3 ${i < 3 ? 'bg-cyber-green' : 'bg-cyber-green/30'}`}></div>
@@ -179,7 +179,7 @@ function init() {
                     <div className="flex flex-col md:flex-row justify-center items-center gap-3 md:gap-8 text-sm md:text-base font-mono text-cyber-green/80 mb-10 tracking-widest uppercase">
                         <div className="flex items-center gap-2 group">
                             <Activity size={14} className="group-hover:animate-spin" />
-                            <span>{role1}</span>
+                            <span>Data Analyst</span>
                         </div>
                         <div className="w-1 h-1 bg-gray-500 rounded-full hidden md:block"></div>
                         <div className="flex items-center gap-2 group">
@@ -201,7 +201,7 @@ function init() {
                         >
                             <span className="relative z-10 flex items-center gap-2 skew-x-[10deg] group-hover:skew-x-0 transition-transform">
                                 <Code2 size={18} />
-                                INITIALIZE_PROJECTS()
+                                INICIAR_PROJETOS()
                             </span>
                             <div className="absolute inset-0 bg-cyber-green/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300"></div>
                             {/* Corner Accents */}
@@ -213,7 +213,7 @@ function init() {
                             href="#contact"
                             className="text-gray-400 hover:text-white font-mono uppercase tracking-widest text-sm border-b border-transparent hover:border-cyber-green transition-all relative group"
                         >
-                            // ESTABLISH_CONTACT
+                            // ESTABELECER_CONTATO
                             <span className="absolute -left-4 top-1/2 -translate-y-1/2 w-2 h-2 bg-cyber-green opacity-0 group-hover:opacity-100 transition-opacity rounded-full"></span>
                         </a>
                     </div>

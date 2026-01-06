@@ -21,12 +21,12 @@ const Header = () => {
     }, []);
 
     const sysLogs = [
-        "INITIALIZING SYSTEM...",
-        "CHECKING INTEGRITY...",
-        "CONNECTING TO SERVER...",
-        "ESTABLISHING SECURE LINK...",
-        "ACCESS GRANTED.",
-        "LOAD COMPLETE."
+        "INICIALIZANDO SISTEMA...",
+        "VERIFICANDO INTEGRIDADE...",
+        "CONECTANDO AO SERVIDOR...",
+        "ESTABELECENDO CONEXÃO SEGURA...",
+        "ACESSO PERMITIDO.",
+        "CARREGAMENTO COMPLETO."
     ];
 
     return (
@@ -47,7 +47,7 @@ const Header = () => {
                         >
                             {sysLogs.map((log, i) => (
                                 <div key={i} className="h-5 flex items-center whitespace-nowrap">
-                                    <span className="opacity-70 mr-2">SYS.LOG:</span> {log}
+                                    <span className="opacity-70 mr-2">LOG.SIS:</span> {log}
                                 </div>
                             ))}
                             {/* Duplicate for seamless loop if needed, but simple vertical slide works for logs */}
@@ -59,7 +59,7 @@ const Header = () => {
                 <div className="hidden md:flex items-center gap-4 justify-center w-1/3">
                     <div className="flex items-center gap-2 px-3 py-1 border border-cyber-green/30 rounded bg-cyber-green/5">
                         <Shield size={14} />
-                        <span>SEC.LEVEL: 01</span>
+                        <span>NÍVEL.SEG: 01</span>
                     </div>
                     <div>
                         {time.toLocaleTimeString([], { hour12: false })}
@@ -69,9 +69,9 @@ const Header = () => {
                 {/* Right: Controls / Nav */}
                 <div className="flex items-center justify-end gap-6 w-1/3">
                     <nav className="hidden md:flex gap-6">
-                        <a href="#projects" className="hover:text-white transition-colors hover:underline decoration-cyber-green underline-offset-4">PROJECTS</a>
-                        <a href="#about" className="hover:text-white transition-colors hover:underline decoration-cyber-green underline-offset-4">ABOUT</a>
-                        <a href="#contact" className="hover:text-white transition-colors hover:underline decoration-cyber-green underline-offset-4">CONTACT</a>
+                        <a href="#projects" className="hover:text-white transition-colors hover:underline decoration-cyber-green underline-offset-4">PROJETOS</a>
+                        <a href="#about" className="hover:text-white transition-colors hover:underline decoration-cyber-green underline-offset-4">SOBRE</a>
+                        <a href="#contact" className="hover:text-white transition-colors hover:underline decoration-cyber-green underline-offset-4">CONTATO</a>
                     </nav>
                     <div className="flex items-center gap-3 text-cyber-green/60">
                         <Wifi size={14} />
