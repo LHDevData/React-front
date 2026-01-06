@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { Terminal, Code2, Cpu, Wifi, Activity, Database, Globe, Lock } from 'lucide-react';
-import UserLogo from '../assets/avatar-fullstack.png';
+import UserLogo from '../assets/avatar-god.png';
 
 // Helper hook for decrypting text effect
 const useDecryptEffect = (text, startDelay = 0) => {
