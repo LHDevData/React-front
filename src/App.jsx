@@ -4,6 +4,7 @@ import About from './components/About';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import Header from './components/Header';
 
 function App() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -18,7 +19,9 @@ function App() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-cyber-dark text-white selection:bg-cyber-green selection:text-black">
+    <div className="min-h-screen bg-cyber-dark text-white selection:bg-cyber-green selection:text-black font-sans">
+      <Header />
+
       {/* Custom Cursor Glow Effect */}
       <div
         className="fixed w-96 h-96 bg-cyber-green/5 rounded-full pointer-events-none blur-3xl mix-blend-screen transform -translate-x-1/2 -translate-y-1/2 z-0 transition-transform duration-75"
