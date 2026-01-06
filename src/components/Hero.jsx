@@ -52,8 +52,8 @@ const Hero = () => {
 
     // Decrypting titles
     const titleText = useDecryptEffect("LUCAS HENRIQUE", 500);
-    const role1 = useDecryptEffect("ANALISTA DADOS", 1500);
-    const role2 = useDecryptEffect("APRENDIZADO MÁQUINA", 2000);
+    const role1 = useDecryptEffect("DATA ANALYST", 1500);
+    const role2 = useDecryptEffect("MACHINE LEARNING", 2000);
     const role3 = useDecryptEffect("FULL-STACK", 2500);
 
     // Simulate changing system data
